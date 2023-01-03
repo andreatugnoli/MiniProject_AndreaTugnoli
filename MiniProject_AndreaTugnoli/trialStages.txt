@@ -1,0 +1,7 @@
+type,duration,eventNext
+fixation,1,time
+cue,3,time
+fixation,1,time
+task,3,keytrigger
+response,3,time
+buffer,1,time
