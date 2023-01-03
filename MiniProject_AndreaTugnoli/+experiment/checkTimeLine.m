@@ -1,0 +1,13 @@
+function checkTimeLine(stages, experimentInfo)
+    % checkTimeLine: checks if the total time of the experiment corresponds
+    % make sure all calculations where done correctly
+
+    calcTotalTime = ...
+        sum([stages(experimentInfo.positionTaskStages(2,:)).nextStageAt]);
+    
+    assert(...
+        abs(sum(experimentInfo.totalTime) - calcTotalTime) < ...
+        experimentInfo.defaultParam.ALLOWED_OFFSET, ...
+        'Somehow the timing is incorrect');
+
+end

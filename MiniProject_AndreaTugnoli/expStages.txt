@@ -1,0 +1,7 @@
+type,duration,eventNext
+start,,keypress
+instruction,,keypress
+wait,1,time
+allTasks,,
+wait,1,time
+final,2,time
